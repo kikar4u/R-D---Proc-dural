@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89fc0eb0d55111418e7f93802fc2d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeX: 20
-  sizeZ: 20
-  floorPrefab: {fileID: 6871134218609467505, guid: 8d2cc17cd84f0314594f8ae42b486a80,
+  sizeX: 100
+  sizeZ: 100
+  floorPrefab: {fileID: 6217402598753804876, guid: 0b2785daef981604e94e65f976cfa48f,
     type: 3}
+  sizeCell: 0

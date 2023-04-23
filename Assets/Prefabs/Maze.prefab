@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7021349121963858236}
   m_Layer: 0
   m_Name: Maze
-  m_TagString: Untagged
+  m_TagString: Maze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,8 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89fc0eb0d55111418e7f93802fc2d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeX: 100
-  sizeZ: 100
+  sizeX: 500
+  sizeZ: 500
   floorPrefab: {fileID: 6217402598753804876, guid: 0b2785daef981604e94e65f976cfa48f,
     type: 3}
-  sizeCell: 0
+  sizeCell: 100
+  gridSize: 100
+  CellCoord: []

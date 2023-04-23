@@ -8,12 +8,14 @@ public class GridCreator : MonoBehaviour
     public Maze mazePrefab;
 
     private Maze mazeInstance;
+    [SerializeField] string mazeName = "Maze";
 
     public GameObject model;
     // Start is called before the first frame update
     void Start()
     {
         mazeInstance = Instantiate(mazePrefab) as Maze;
+        mazeInstance.name = mazeName;
         //StartCoroutine(spawnGrid(0));
 
     }
@@ -35,6 +37,20 @@ public class GridCreator : MonoBehaviour
 
         }
         
+    }
+    private void OnGUI()
+    {
+        if (GUI.Button(new Rect(10, 10, 100, 30), "Click me!"))
+        {
+            GameObject[] mazes = GameObject.FindGameObjectsWithTag("Maze");
+            foreach (GameObject maz in mazes) {
+                Destroy(maz);
+            }
+                mazeInstance = Instantiate(mazePrefab) as Maze;
+                mazeInstance.name = mazeName;
+
+
+        }
     }
     // Update is called once per frame
     void Update()
